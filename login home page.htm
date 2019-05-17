@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: AQUA;
+}
+
+/* Style the header */
+.header {
+  padding: 70px;
+  text-align: center;
+}
+ 
+/* columns */
+.column {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive layout -columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/*full-width input fields*/
+input[type=text],
+input[type=password]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+/*set a style for all buttons*/
+button{
+	background-color: fuchsia;
+	color: white;
+	border-radius: 5px;
+	padding: 20px 60px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	float: center;
+}
+.cancelbtn{
+	width: auto;
+	padding: 10px 18px;
+	background-color: #4682b4;
+}
+/*center the image and position the close button*/
+.imgcontainer{
+	text-align: center;
+	margin: 24x 0 12px 0;
+	position: relative;
+}
+img.avatar{
+	width: 40%;
+	border-radius: 50%;
+}
+.container{
+	padding:16px;
+}
+span.psw{
+	float: right;
+	padding-top: 16px;
+}
+/*the modal(background)*/
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 50;
+	top: 0;
+	width: 70%;
+	height: 70%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgb(0,0,0,0.4);
+	padding-top: 60px;
+}
+.modal-content{
+	background-color: #fefefe;
+	margin: 5% auto 15% auo;
+ 	border: 1px solid #888;
+ 	width: 80%;
+}
+/*the close button*/
+.close{
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+.close: hover,
+.close:focus{
+	color: red;
+	cursor: pointer;
+}
+
+/*add zoom animation*/
+.animate{
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom{
+	from {-webkit-transform: scale(0)}
+	to{-webkit_transaform: scale(1)}
+}
+@keyframes animatezoom{
+	from{transform: scale(0)}
+	to{transform: scale(1)}
+}
+/*change styles for span and cancel button on extra small screens*/
+@media screen and(max-width: 300px){
+	span.psw{
+	display: block;
+	float: none;
+	}
+	.cancelbtn{
+	width: 100%;
+	}
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+	<h1><font face="Bookman Old Style"><font size="12"><b> WELCOME TO</b></font></h2>
+	<h2><font face="Bookman Old Style"><font size="12"><b>POLLYWEB STRETCH</b></font></h1>
+</div>
+	
+<div class="column">
+	<p><font face="Bookman Old Style"><font color="black"><font size="3"> I am here to create meaningful and lasting relationships with my clients</font></p>
+ 	<p align="center"><font face="Arial Black"><font size="4"> LETS BUILD SOMETHING AMAIZING TOGETHER</font></P>
+
+<button onclick="document.
+getElementById('id01')
+.style.display='block'"
+style="width:auto;">log in
+</button>
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="action_page.php">
+<div class="imgcontainer">
+<span onclick="document.getElementById('id01')
+
+.style.display='none'"
+class="close" title="close modal">
+&times;
+</span>
+
+<img scr="img_profile.png"
+alt="Avatar"
+class="Avatar">
+</div>
+
+
+<div class="container">
+<label><b>username</b></label>
+<input type="text" placeholder="enter username" name="username" required>
+
+<label><b>password</b></label>
+<input type="text" placeholder="enter password" name="psw" required>
+
+
+<button type="submit">login</button>
+<input type="checkbox"
+checked="checked">
+remember me
+</div>
+
+<div class="container"
+style="background-color:#f1f1f1">
+<button type="button"
+onclick="document.getElementById
+('id01').style.
+
+display='none'" class="cancelbtn">
+cancel</button>
+<span class="psw">forgot
+<a href="#">password?
+
+</a></span>
+	</div>
+	</form>
+</div>
+
+<script>
+//get the modal
+var modal=document.getElementById('id01');
+
+//when the user clicks anywhere ouside the modal,close it
+window.onclick= function(event){
+	if(event.target==modal){
+	modal.style.display="none";
+	}
+}
+</script>
+</div>
+
+</body>
+</html>
